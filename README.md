@@ -23,6 +23,8 @@ https://telefonica-fundacion.typeform.com/42Madrid-Telf
 - Jose Maldonado - Google Cloud Customer Engineering Manager
 - José Luis Robles Urquiza - Jefe Oficina Estrategia Tecnológica - Tecnología Digital - Canal Online Telefónica
 
+# Arquitectura?
+
 1. **Web App de Agente**: Los agentes interactuarán con los clientes a través de una interfaz web tipo chat. Puedes construir una aplicación web utilizando tecnologías como HTML, CSS y JavaScript, y utilizar un framework de desarrollo web como React.js o Angular.js. Esta aplicación web permitirá a los agentes recibir y enviar mensajes a través de una interfaz de chat.
 
 2. **Google Cloud Pub/Sub**: Utiliza el servicio de Google Cloud Pub/Sub para implementar la comunicación asincrónica y los eventos entre los clientes y los agentes. Los mensajes enviados por los clientes de Telegram se publicarán en un tema (topic) de Pub/Sub, y los agentes se suscribirán a ese tema para recibir los mensajes. De manera similar, cuando los agentes envíen mensajes, se publicarán en otro tema de Pub/Sub, y los clientes estarán suscritos a ese tema para recibir los mensajes de respuesta.
